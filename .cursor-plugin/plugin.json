@@ -1,0 +1,16 @@
+{
+  "name": "ambiguous",
+  "version": "0.1.0",
+  "description": "Work in an Ambiguous Workspace — docs, sheets, slides, chat, mail, drive, tasks, CRM, forms, calendar and wiki — using MCP or CLI.",
+  "author": {
+    "name": "Ambiguous AI",
+    "email": "support@ambiguous.ai"
+  },
+  "homepage": "https://www.ambiguous.ai",
+  "repository": "https://github.com/ambiguous-ai/cursor-plugin",
+  "license": "MIT",
+  "keywords": ["ambiguous", "workspace", "productivity", "tasks", "docs", "calendar", "mail", "chat"],
+  "logo": "assets/logo.svg",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
