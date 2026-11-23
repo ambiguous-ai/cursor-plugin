@@ -1,7 +1,10 @@
 {
   "mcpServers": {
     "ambiguous": {
-      "url": "https://app.ambiguous.ai/mcp"
+      "url": "https://app.ambiguous.ai/mcp",
+      "headers": {
+        "X-Ambiguous-Require-Auth": "true"
+      }
     }
   }
 }

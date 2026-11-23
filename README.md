@@ -40,16 +40,12 @@ Confirm the returned account and workspace before creating anything. The connect
 uses `https://app.ambiguous.ai/mcp`; sign-in and workspace operations require internet
 access even when the plugin is installed locally.
 
-### Authentication compatibility
+### Authentication
 
-Local discovery has been verified, but standalone plugin authentication is currently
-blocked on Cursor Desktop 3.31.15: after Authenticate reports success, protected calls
-such as `auth_whoami` still return `Unauthorized`. An existing manually configured
-connection can mask this failure. This package is not yet verified end to end.
-
-Cursor is tracking a [matching OAuth issue](https://forum.cursor.com/t/plugin-mcp-oauth-never-reaches-needsauth-authenticate-button-missing-browser-never-opens/170058)
-with servers that allow unauthenticated discovery. Do not treat the chat's
-"authenticated" message as proof; verify a protected workspace read succeeds.
+The plugin requests sign-in when the connection starts, before loading workspace
+operations. Complete browser consent and verify your account with `auth_whoami`.
+If an older installation is stuck at `Unauthorized`, use Logout and Reload in the
+MCP configuration, then Authenticate again.
 
 ## Source and license
 
